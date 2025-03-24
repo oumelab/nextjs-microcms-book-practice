@@ -12,8 +12,13 @@
 
 import { createNextAuthMiddleware } from "nextjs-basic-auth-middleware";
 
-export const middleware = createNextAuthMiddleware();
 
+export const middleware = createNextAuthMiddleware({
+  users:[{
+    name: process.env.BASIC_AUTH_USERNAME || "",
+    password: process.env.BASIC_AUTH_PASSWORD || "",
+  }],
+});
 export const config = {
-	matcher: ["/(.*)"],
+	matcher: ['/(.*)'],
 };
