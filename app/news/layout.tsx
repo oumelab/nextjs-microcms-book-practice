@@ -5,6 +5,9 @@ type Props = {
   children: React.ReactNode;
 };
 
+// キャッシュの保持期間を60秒に設定(ISR)
+export const revalidate = 60;
+
 export default function NewsLayout({ children }: Props) {
   return (
     <>

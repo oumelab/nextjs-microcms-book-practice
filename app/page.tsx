@@ -1,10 +1,12 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
-import ButtonLink from "@/app/_components/ButtonLink";
-import NewsList from "@/app/_components/NewsList";
 import { getNewsList } from "@/app/_libs/microcms";
 import { TOP_NEWS_LIMIT } from "./_constants";
+import NewsList from "@/app/_components/NewsList";
+import ButtonLink from "@/app/_components/ButtonLink";
+
+export const revalidate = 60;
 
 export default async function Home() {
 
