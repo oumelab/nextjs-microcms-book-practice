@@ -1,3 +1,4 @@
+// Middleware の動作検証
 // import { NextRequest, NextResponse } from "next/server"
 
 // export function middleware(request: NextRequest) {
@@ -10,15 +11,18 @@
 //   matcher: "/members/:path*",
 // };
 
-import { createNextAuthMiddleware } from "nextjs-basic-auth-middleware";
 
 
-export const middleware = createNextAuthMiddleware({
-  users:[{
-    name: process.env.BASIC_AUTH_USERNAME || "",
-    password: process.env.BASIC_AUTH_PASSWORD || "",
-  }],
-});
-export const config = {
-	matcher: ['/(.*)'],
-};
+// nextjs-basic-auth-middleware でBasic認証を設定
+// import { createNextAuthMiddleware } from "nextjs-basic-auth-middleware";
+
+
+// export const middleware = createNextAuthMiddleware({
+//   users:[{
+//     name: process.env.BASIC_AUTH_USERNAME || "",
+//     password: process.env.BASIC_AUTH_PASSWORD || "",
+//   }],
+// });
+// export const config = {
+// 	matcher: ['/(.*)'],
+// };
