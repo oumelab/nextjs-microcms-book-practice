@@ -45,7 +45,7 @@ export const config = {
 };
 ```
 3. `.env.local` に環境変数を追記
-```toml
+```
 BASIC_AUTH_USERNAME=admin
 BASIC_AUTH_PASSWORD=password
 ```
