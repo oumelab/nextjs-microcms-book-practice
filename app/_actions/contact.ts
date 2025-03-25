@@ -100,7 +100,7 @@ export async function createContactData(_prevState: {status: string, message: st
     console.log(e);
     return {
       status: "error",
-      message: "お問い合わせに失敗しました",
+      message: "お問い合わせに失敗しました" + e,
     };
   }
 
