@@ -8,6 +8,16 @@
   display: none;
 }
 
+.item_button {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #fff;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
 @media (max-width: 640px) {
   .nav {
     display: none;
